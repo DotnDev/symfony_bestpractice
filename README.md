@@ -67,6 +67,19 @@ Maker Bundle (to create controllers, entities, etc more rapidly): composer requi
 
 <b>B. Tests creation</b>
 
+<b>Project structure</b>
+
+The ‘tests’ folder should reflect the ‘src’ structure : [INSERT SCREENSHOT]
+
+<b>Naming convention</b>
+
+Test classes should always end with Test
+example : UserTest
+
+Test functions names should always start with test
+example: public function testConstructor()
+
+
 Following TDD, you should write your tests before your code.
 
 Full description of TDD : [INSERT LINK]
@@ -85,18 +98,6 @@ What you need should be tested.
 Bridge : l’utiliser le plus possible plutôt que PhpUnit - Bridge relève les dépréciations + vérifier les autres choses qu’il fait:
 
 
-Project structure
-
-The ‘tests’ folder should reflect the ‘src’ structure : [INSERT SCREENSHOT]
-
-
-Naming convention
-
-Test classes should always end with Test
-example : UserTest
-
-Test functions names should always start with test
-example: public function testConstructor()
 
 <b>Database Tests</b>
 
