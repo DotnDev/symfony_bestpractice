@@ -1,9 +1,9 @@
 # symfony_bestpractice
 
-[IN PROGRESS] Symfony 4 - Best Practice
+<b>[IN PROGRESS] Symfony 4 - Best Practice</b>
 
 
-A. Set up
+<b>A. Set up</b>
 
 1. Create a Symfony project  Create a new Symfony project  in the desired location from the command line. To make sure your project is in LTS (Long-Term Support), use the following command : 
 symfony new project-name --version=lts –full
@@ -12,7 +12,7 @@ symfony new significationprenom-unittest --version=lts –full
 
 Open your project in your favourite IDE (PhpStorm will be used for this documentation)
 
-2. Create .env local files
+<b>2. Create .env local files</b>
 
 Create .env.local and env.test.local files in the root directory of your project.
 The files you can edit with your database information are the local ones.
@@ -25,7 +25,7 @@ replace USERNAME, PASSWORD and DB_NAME with the correct information. Your databa
  Note : the database should ne exist yet in PhpMyAdmin, just insert the name you want it to have, Doctrine will then take care of creating it.
 
 
-3. Install all the necessary bundles for your app:
+<b>3. Install all the necessary bundles for your app:</b>
 
 PHPUnit library: composer require --dev symfony/phpunit-bridge
 PHPUnit : ./bin/phpunit
@@ -44,7 +44,7 @@ php bin/console doctrine:fixtures:load
 
 
 
-4.  Create your test database:
+<b>4. Create your test database:</b>
 
 
 php bin/console doctrine:database:create --env=test
@@ -65,7 +65,7 @@ use them as well to secure your data!
 Maker Bundle (to create controllers, entities, etc more rapidly): composer require --dev symfony/maker-bundle 
 
 
-B. Tests creation
+<b>B. Tests creation</b>
 
 Following TDD, you should write your tests before your code.
 
