@@ -67,11 +67,11 @@ Maker Bundle (to create controllers, entities, etc more rapidly): composer requi
 
 <b>B. Tests creation</b>
 
-<b>Project structure</b>
+<b>1. Project structure</b>
 
 The ‘tests’ folder should reflect the ‘src’ structure : [INSERT SCREENSHOT]
 
-<b>Naming convention</b>
+<b>2. Naming convention</b>
 
 Test classes should always end with Test
 example : UserTest
