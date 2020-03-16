@@ -98,7 +98,15 @@ example : UserTest
 Test functions names should always start with test
 example: public function testConstructor()
 
+<b>Database Tests</b>
 
+
+Create a test database: 
+php bin/console doctrine:database:create --env=test
+
+Data Fixtures:
+composer require --dev doctrine/doctrine-fixtures-bundle
+php bin/console doctrine:fixtures:load
 
 
 
