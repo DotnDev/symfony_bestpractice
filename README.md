@@ -5,7 +5,7 @@
 
 <b>A. Set up</b>
 
-1. Create a Symfony project  Create a new Symfony project  in the desired location from the command line. To make sure your project is in LTS (Long-Term Support), use the following command : 
+1. Create a Symfony project  Create a new Symfony project  in the desired location from the command line. To make sure your project is in LTS (Long-Term Support), use the following command :
 symfony new project-name --version=lts –full
 symfony new significationprenom-unittest --version=lts –full
 
