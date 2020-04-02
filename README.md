@@ -29,20 +29,20 @@ replace USERNAME, PASSWORD and DB_NAME with the correct information. Your databa
 
 <b>3. Install all the necessary bundles for your app:</b>
 
-PHPUnit library: composer require --dev symfony/phpunit-bridge
-PHPUnit : ./bin/phpunit
+PHPUnit library: composer require --dev symfony/phpunit-bridge<br/>
+PHPUnit : ./bin/phpunit<br/>
 
-Doctrine (takes care of database operations) : 
-composer require symfony/orm-pack  
-Doctrine Test Bundle (resets the database automatically before each test) : 
-composer require --dev dama/doctrine-test-bundle 
+Doctrine (takes care of database operations) :<br/>  
+composer require symfony/orm-pack<br/>
+Doctrine Test Bundle (resets the database automatically before each test) : <br/>
+composer require --dev dama/doctrine-test-bundle <br/>
 
-Data Fixtures (library to create and load fake data into database):
-composer require —dev doctrine/doctrine-fixtures-bundle 
+Data Fixtures (library to create and load fake data into database):<br/>
+composer require --dev orm-fixtures<br/>
 
-To empty the database and reload all fixture classes:
+To empty the database and reload all fixture classes:<br/>
 
-php bin/console doctrine:fixtures:load
+php bin/console doctrine:fixtures:load<br/>
 
 
 
