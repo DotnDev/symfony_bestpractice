@@ -50,6 +50,8 @@ Use Php Unit Bridge:
 `composer require --dev symfony/phpunit-bridge`
 ` ./vendor/bin/simple-phpunit`
 
+By default in phpunit.xml.dist : <server name="SYMFONY_PHPUNIT_VERSION" value="7.5" />
+To install newer versions, edit the above line with desired version, go to vendor > bin, delete .phpunit directory, and use phpunit command in the Terminal.
 
 <b>1. Tests creation</b>
 
@@ -104,6 +106,10 @@ To empty the database and reload all fixture classes:<br/>
 
 To reset fake data in database:
  composer require --dev dama/doctrine-test-bundle
+ 
+ Migration:
+ `php bin/console doctrine:migrations:diff`
+` php bin/console doctrine:migrations:migrate`
 
 
 
