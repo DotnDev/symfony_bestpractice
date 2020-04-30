@@ -30,13 +30,16 @@ Note : the database should ne exist yet in PhpMyAdmin, just insert the name you 
 
 ## ENTITIES
 
-Create Maker Bundle to generate your entities.
+Create MakerBundle to generate your entities.
 
 `composer require maker --dev`
 
 Create your entities with:
 
 `php bin/console make:entity`
+
+- No need to create an id attribute : MakerBundle automatically generates one (and Doctrine will use it to create a constraint key in your database if you set a relation up): 
+https://symfony.com/doc/current/doctrine/associations.html
 
 
 ## UNIT TESTS
@@ -63,6 +66,16 @@ Test Classes:
 
 They should extend TestCase (gives access to Asserts), example : UserTest extends TestCase
 
+### SETUP FUNCTION
+
+Use the setUp() function which is automatically called before each test to make sure the object is newly created before each test - each test should be completely independant from each other:
+
+` public function setUp()
+    {
+
+        $this -> prenom = new Firstname();
+
+    } `
 
 ## DATABASE TESTS
 
@@ -94,9 +107,6 @@ To reset fake data in database:
 
 
 
-
-
-
 ---------------------------------------------------------------
 
 5. Start your server
@@ -109,18 +119,6 @@ WARNING unable to find the application log
 
 *Assert
 use them as well to secure your data!
-
-
-
-
-
-
-
-
-
-
-
-
 https://phpunit.readthedocs.io/fr/latest/assertions.html
 
 
