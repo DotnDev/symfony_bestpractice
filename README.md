@@ -95,11 +95,11 @@ Create a test database:
 `php bin/console doctrine:database:create --env=test`
 The name of the database will be the one you specified in env.test.local
 
-Fixtures Bundle:
-`composer require --dev doctrine/doctrine-fixtures-bundle`
-
 Data Fixtures (library to create and load fake data into database):<br/>
 `composer require --dev orm-fixtures`
+
+A Symfony bundle to manage fixtures:
+https://github.com/hautelook/AliceBundle
 
 To empty the database and reload all fixture classes:<br/>
 `php bin/console doctrine:fixtures:load`
